@@ -846,7 +846,7 @@ input[type="file"]::-webkit-file-upload-button {
     background-color: var(--main-color);
 }
 
-.consultant{
+.consultant {
     flex: 1;
     display: flex;
 }
@@ -952,8 +952,8 @@ input[type="file"]::-webkit-file-upload-button {
 
 /* NEWSLETTER  */
 
-#newsletter .header-section{
-    margin-bottom:  0;
+#newsletter .header-section {
+    margin-bottom: 0;
 }
 
 /* GALLERY  */
