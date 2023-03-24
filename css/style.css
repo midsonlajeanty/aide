@@ -801,24 +801,13 @@ input[type="file"]::-webkit-file-upload-button {
     font-style: italic;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.col {
-    flex: 1;
-}
-
-
 #mission,
 #team {
     background-color: var(--gray1-color);
 }
 
 .team {
-    padding: 30px;
+    padding: 20px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 15px -7px #000000;
     box-shadow: 0px 0px 15px -7px #000000;
@@ -830,6 +819,16 @@ input[type="file"]::-webkit-file-upload-button {
     object-fit: cover;
     object-position: right;
     transition: all ease-out .3s;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.col {
+    flex: 1;
 }
 
 .col img:hover {
@@ -1128,7 +1127,7 @@ input[type="file"]::-webkit-file-upload-button {
 /* ********************************************
         RESPONSIVE DESIGN
 ******************************************** */
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1024px) {
     .banner-content h1 {
         font-size: 2rem;
     }
@@ -1207,7 +1206,7 @@ input[type="file"]::-webkit-file-upload-button {
     }
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 768px) {
     .header-section h1::after {
         width: 50px;
     }
@@ -1225,15 +1224,6 @@ input[type="file"]::-webkit-file-upload-button {
 
     .banner-page p {
         margin: 20px;
-    }
-
-    .block {
-        flex-wrap: wrap;
-    }
-
-    .thumbnail {
-        width: 95%;
-        margin: auto;
     }
 
     .description {
@@ -1269,7 +1259,22 @@ input[type="file"]::-webkit-file-upload-button {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 567px) {
+
+    .header-section:not(.center) h2::after {
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .block, .block.b-2 {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
 
     .formation-item,
     .formation-item.entete,
@@ -1286,14 +1291,12 @@ input[type="file"]::-webkit-file-upload-button {
         flex-wrap: wrap;
     }
 
-    .actu-list .actu-item {
-        width: 100%;
+    .interventions-list{
+        flex-direction: column;
     }
 
-    .admission {
-        margin: 10px;
-        padding: 50px 0px;
-        box-shadow: none;
+    .actu-list .actu-item {
+        width: 100%;
     }
 
     .partenaires {
